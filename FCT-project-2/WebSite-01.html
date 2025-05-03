@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="styles-01.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="First_Page">
+
+        <header>
+            <div class="logo"><i class="ri-cloud-fill"></i><span>SKY</span></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon"></div>
+        </header>
+
+        <section class="banner">
+            <p>Home | Tours | Booking</p>
+            <h1>BOOKING FORM</h1>
+        </section>
+
+    </div>
+
+    <div class="Second_Page">
+
+        <form class="form-container" action="book_now.php" method="POST">
+            <h2>PERSONAL IDENTITY</h2>
+            <div class="form-group">
+                <div class="input-box">
+                    <label>FIRST NAME</label>
+                    <input type="text" name="first_name"  required>
+                </div>
+                <div class="input-box">
+                    <label>LAST NAME</label>
+                    <input type="text" name="last_name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-box">
+                    <label>EMAIL ADDRESS</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label>PHONE NUMBER</label>
+                    <input type="text" name="phone" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-box small">
+                    <label>START DATE</label>
+                    <div class="date_select">
+                        <select name="start_day">
+                            <option selected>10</option>
+                            <option selected>05</option>
+                            <option selected>02</option>
+                            <option selected>20</option>
+                        </select>
+                        <select name="start_month">
+                            <option selected>05</option>
+                            <option selected>06</option>
+                            <option selected>07</option>
+                            <option selected>08</option>
+                        </select>
+                        <select name="start_year">
+                            <option selected>2026</option>
+                            <option selected>2025</option>
+                            <option selected>2024</option>
+                            <option selected>2023</option>
+                            <option selected>2022</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label>DURATION</label>
+                    <select name="duration">
+                        <option selected>7 - 14 Days</option>
+                        <option selected>1 - 7 Days</option>
+                        <option selected> 21 Days</option>
+                        <option selected>30 Days</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label>DESTINATION</label>
+                    <select name="destination">
+                        <option selected>Japan</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2 class="title">PACKAGE</h2>
+            <div class="package-slider">
+                <div class="package-card active">
+                    <div class="selected">
+                        <span>&#10004;</span>
+                    </div>
+                    <div class="package-content">
+                        <h3>DISCOVER JAPAN TOUR PACKAGE</h3>
+                        <p><i class="ri-map-pin-fill"></i> Tokyo & Kyoto, Japan | <i
+                                class="ri-money-dollar-circle-line"></i> Start from $3,500</p>
+                    </div>
+                </div>
+                <div class="package-card"></div>
+            </div>
+
+            <div class="options">
+                <label class="checkbox-container">
+                    <input type="checkbox" name="insurance" >
+                    <span class="checkmark"></span>
+                    Get me a <a href="#">travel insurance</a> that covers my whole trip safety and cancellation.<br><br>
+
+                    <input type="checkbox" name="agree">
+                <span class="checkmark"></span>
+                I have read all <a href="#">terms & condition</a> and <a href="#">privacy policy</a>.
+                </label>
+
+
+                <button class="book-now">Book Now</button>
+            </div>
+        </form>
+
+        <footer>
+            <div class="Up_Footer">
+                <div class="footer-logo"><i class="ri-cloud-fill"></i><span>SKY</span></div>
+                <div class="Footer_List">
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+                <div class="socials">
+                    <i class="ri-facebook-circle-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="rights">
+                <p class="Copyright">Copyright &copy; 2025 Fuchsia. All rights reserved.</p>
+                <p class="Terms">Privacy Policy | Terms & Condition</p>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
